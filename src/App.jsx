@@ -1,11 +1,15 @@
 import React from 'react'
 import Home from './pages/Home'
-import {} from 'react-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 const App = () => {
   return (
-    <div>
-      <Home />
-    </div>
+    <main>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/clone" element={<Home />} />
+        </Routes>
+      </BrowserRouter>
+    </main>
   )
 }
 
