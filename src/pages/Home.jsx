@@ -126,6 +126,7 @@ const Home = () => {
               </a>
             </div>
           </div>
+          
         </section>
       </div>
       <div className="flex flex-row flex-wrap text-center justify-center max-w-[1200px] m-auto">
